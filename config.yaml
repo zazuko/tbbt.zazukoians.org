@@ -1,0 +1,24 @@
+middlewares:
+  rewrite:
+    module: file:rewrite.js
+    order: 0
+    config:
+      url: http://localhost:8080/
+
+  welcome:
+    module: trifid-core/middlewares/view.js
+    paths: /
+    methods: GET
+    config:
+      path: views/welcome.hbs
+
+  entity-renderer:
+    module: "@zazuko/trifid-renderer-entity"
+
+  fetch-handler:
+    module: trifid-handler-fetch
+    config:
+      url: https://raw.githubusercontent.com/zazuko/tbbt-ld/master/dist/tbbt.nt
+      contentType: application/n-triples
+      split: true
+      cache: true

@@ -4,9 +4,8 @@
   "version": "0.2.2",
   "type": "module",
   "dependencies": {
-    "@zazuko/trifid-renderer-entity": "^0.1.0",
-    "camouflage-rewrite": "^1.4.0",
-    "trifid-core": "^2.1.1",
+    "@zazuko/trifid-renderer-entity": "^0.4.10",
+    "trifid-core": "^2.5.2",
     "trifid-handler-fetch": "^2.0.1"
   },
   "license": "UNLICENSED",

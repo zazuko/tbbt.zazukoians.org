@@ -1,9 +1,9 @@
+globals:
+  datasetBaseUrl: http://localhost:8080/
+
 middlewares:
   rewrite:
-    module: file:rewrite.js
-    order: 0
-    config:
-      url: http://localhost:8080/
+    module: trifid-core/middlewares/rewrite.js
 
   welcome:
     module: trifid-core/middlewares/view.js

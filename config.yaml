@@ -20,7 +20,7 @@ middlewares:
       path: views/parameters.hbs
 
   entity-renderer:
-    module: "@zazuko/trifid-renderer-entity"
+    module: "@zazuko/trifid-entity-renderer"
 
   fetch-handler:
     module: trifid-handler-fetch

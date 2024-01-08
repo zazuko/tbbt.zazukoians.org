@@ -4,7 +4,7 @@
   "version": "0.2.2",
   "type": "module",
   "dependencies": {
-    "@zazuko/trifid-entity-renderer": "^0.6.2",
+    "@zazuko/trifid-entity-renderer": "^0.6.3",
     "trifid-core": "^2.7.1",
     "trifid-handler-fetch": "^2.0.1"
   },

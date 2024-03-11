@@ -4,6 +4,7 @@ FROM docker.io/library/node:20-alpine
 WORKDIR /app
 COPY package.json package-lock.json ./
 ENV NODE_ENV="production"
+ENV TRIFID_CONFIG="/app/config.yaml"
 RUN npm ci
 COPY . .
 

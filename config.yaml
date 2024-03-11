@@ -1,20 +1,25 @@
 globals:
   datasetBaseUrl: http://localhost:8080/
+  endpoints:
+    default:
+      url: /query
 
-middlewares:
-  rewrite:
-    module: trifid-core/middlewares/rewrite.js
+template:
+  title: The Big Bang Theory - Linked Data
 
+plugins:
   welcome:
-    module: trifid-core/middlewares/view.js
+    module: trifid-core/plugins/view.js
     paths: /
     methods: GET
     config:
       path: views/welcome.hbs
 
   parameters:
-    module: trifid-core/middlewares/view.js
-    paths: /parameters
+    module: trifid-core/plugins/view.js
+    paths:
+      - /parameters
+      - /parameters/
     methods: GET
     config:
       path: views/parameters.hbs
@@ -27,5 +32,3 @@ middlewares:
     config:
       url: https://raw.githubusercontent.com/zazuko/tbbt-ld/master/dist/tbbt.nt
       contentType: application/n-triples
-      split: true
-      cache: true

@@ -24,6 +24,20 @@ plugins:
     config:
       path: views/parameters.hbs
 
+  yasgui:
+    module: trifid-plugin-yasgui
+    config:
+      urlShortener: https://s.zazuko.com/api/v1/shorten
+
+  graph-explorer:
+    module: trifid-plugin-graph-explorer
+    config:
+      dataLabelProperty: <http://schema.org/name> | rdfs:label
+      schemaLabelProperty: <http://schema.org/name> | rdfs:label
+
+  spex:
+    module: trifid-plugin-spex
+
   entity-renderer:
     module: "@zazuko/trifid-entity-renderer"
 

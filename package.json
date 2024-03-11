@@ -5,7 +5,7 @@
   "type": "module",
   "dependencies": {
     "@zazuko/trifid-entity-renderer": "^0.6.3",
-    "trifid-core": "^2.7.1",
+    "trifid-core": "^4.0.2",
     "trifid-handler-fetch": "^2.0.1"
   },
   "license": "UNLICENSED",

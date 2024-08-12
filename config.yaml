@@ -1,3 +1,6 @@
+server:
+  logLevel: debug
+
 globals:
   datasetBaseUrl: http://localhost:8080/
   endpoints:

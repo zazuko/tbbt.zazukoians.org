@@ -44,5 +44,5 @@ plugins:
   fetch-handler:
     module: trifid-handler-fetch
     config:
-      url: https://raw.githubusercontent.com/zazuko/tbbt-ld/master/dist/tbbt.nt
-      contentType: application/n-triples
+      url: https://raw.githubusercontent.com/zazuko/tbbt-ld/master/dist/tbbt.nq
+      contentType: application/n-quads

@@ -4,7 +4,7 @@
   "version": "1.0.1",
   "type": "module",
   "dependencies": {
-    "trifid": "^5.1.5"
+    "trifid": "^5.2.0"
   },
   "license": "UNLICENSED",
   "scripts": {
